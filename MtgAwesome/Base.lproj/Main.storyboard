@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0x4-QI-XC9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0x4-QI-XC9">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MtgAwesome" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrJ-WL-kzN">
@@ -63,7 +68,7 @@
                                 <state key="normal" title="-5"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Sd-ca-fql">
-                                <rect key="frame" x="188" y="57" width="210" height="630"/>
+                                <rect key="frame" x="188" y="57" width="210" height="566"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="xh9-ld-mWm" userLabel="footer">
@@ -76,7 +81,7 @@
                                         <rect key="frame" x="0.0" y="28" width="210" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CdT-YU-pD4" id="Chm-b9-cvy">
-                                            <rect key="frame" x="0.0" y="0.0" width="210" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="210" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+-X" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnz-Es-EcL">
@@ -159,11 +164,11 @@
                         <viewControllerLayoutGuide type="bottom" id="3NN-9G-MOj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VTn-rM-SZr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5G-gr-vZ7">
-                                <rect key="frame" x="16" y="92" width="382" height="595"/>
+                                <rect key="frame" x="16" y="92" width="382" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Commander:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trZ-cJ-jnV">
@@ -370,7 +375,7 @@
         <!--Settings-->
         <scene sceneID="Glc-pT-CSj">
             <objects>
-                <viewController id="Ym5-2E-eJa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ym5-2E-eJa" customClass="SettingsVC" customModule="MtgAwesome" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ROJ-px-axL"/>
                         <viewControllerLayoutGuide type="bottom" id="zgo-8M-nVR"/>
@@ -379,44 +384,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="HfR-2g-eIH">
-                                <rect key="frame" x="20" y="84" width="374" height="608"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HfR-2g-eIH">
+                                <rect key="frame" x="20" y="134" width="374" height="558"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" id="IhR-er-3NW">
-                                        <rect key="frame" x="0.0" y="55" width="374" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PlayerCell" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="PlayerCell" id="IhR-er-3NW" customClass="PlayerCell" customModule="MtgAwesome" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IhR-er-3NW" id="P21-v7-zLw">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Player's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J8O-VF-IgF">
-                                                    <rect key="frame" x="16.000000000000007" y="0.0" width="111.66666666666669" height="44"/>
+                                                    <rect key="frame" x="16" y="0.0" width="200" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="Vqn-n4-SKX"/>
+                                                    </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Ym5-2E-eJa" id="lEK-ya-fNY"/>
+                                                    </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Custom life" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyn-Fh-4FR">
-                                                    <rect key="frame" x="267.66666666666674" y="0.0" width="90.333333333333314" height="44"/>
+                                                    <rect key="frame" x="217" y="0.0" width="141" height="44"/>
+                                                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Ym5-2E-eJa" id="Qt4-i0-Dzp"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="lyn-Fh-4FR" firstAttribute="leading" secondItem="J8O-VF-IgF" secondAttribute="trailing" constant="1" id="0TM-cB-v7Z"/>
                                                 <constraint firstItem="J8O-VF-IgF" firstAttribute="top" secondItem="P21-v7-zLw" secondAttribute="top" id="9pz-eH-7nN"/>
                                                 <constraint firstItem="J8O-VF-IgF" firstAttribute="leading" secondItem="P21-v7-zLw" secondAttribute="leading" constant="16" id="LBX-ao-Vaj"/>
                                                 <constraint firstItem="lyn-Fh-4FR" firstAttribute="top" secondItem="P21-v7-zLw" secondAttribute="top" id="Pxw-LH-Pnl"/>
                                                 <constraint firstAttribute="bottom" secondItem="J8O-VF-IgF" secondAttribute="bottom" id="bmh-gb-ebp"/>
-                                                <constraint firstItem="lyn-Fh-4FR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="J8O-VF-IgF" secondAttribute="trailing" constant="4" id="rxV-h6-JGA"/>
                                                 <constraint firstAttribute="trailing" secondItem="lyn-Fh-4FR" secondAttribute="trailing" constant="16" id="u6j-Bv-hdT"/>
                                                 <constraint firstAttribute="bottom" secondItem="lyn-Fh-4FR" secondAttribute="bottom" id="zAx-dH-IKS"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lifeTextField" destination="lyn-Fh-4FR" id="Mdr-ma-5JK"/>
+                                            <outlet property="playersNameTextField" destination="J8O-VF-IgF" id="E2k-yC-KcC"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="8fF-Cw-Rn4" style="IBUITableViewCellStyleDefault" id="a4L-n3-xKJ">
-                                        <rect key="frame" x="0.0" y="99" width="374" height="44"/>
+                                        <rect key="frame" x="0.0" y="72" width="374" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a4L-n3-xKJ" id="Nkt-3I-J5Y">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
@@ -434,18 +453,37 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Number of players (default 4)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U1m-Sy-82v">
+                                <rect key="frame" x="20" y="84" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="o9B-Fn-XMo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ym5-2E-eJa" id="PJv-l4-bp0"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HfR-2g-eIH" firstAttribute="top" secondItem="U1m-Sy-82v" secondAttribute="bottom" constant="20" id="1VX-bH-TUy"/>
                             <constraint firstItem="HfR-2g-eIH" firstAttribute="leading" secondItem="qvG-tC-bVI" secondAttribute="leading" constant="20" id="3ny-Jj-wPd"/>
-                            <constraint firstItem="HfR-2g-eIH" firstAttribute="top" secondItem="ROJ-px-axL" secondAttribute="bottom" constant="20" id="ARO-bc-9gb"/>
+                            <constraint firstAttribute="trailing" secondItem="U1m-Sy-82v" secondAttribute="trailing" constant="20" id="4M0-dm-FrX"/>
                             <constraint firstItem="zgo-8M-nVR" firstAttribute="top" secondItem="HfR-2g-eIH" secondAttribute="bottom" id="JJ5-Ti-Quk"/>
+                            <constraint firstItem="U1m-Sy-82v" firstAttribute="leading" secondItem="qvG-tC-bVI" secondAttribute="leading" constant="20" id="M1U-dp-aTd"/>
+                            <constraint firstItem="U1m-Sy-82v" firstAttribute="top" secondItem="ROJ-px-axL" secondAttribute="bottom" constant="20" id="kih-78-eMw"/>
                             <constraint firstAttribute="trailing" secondItem="HfR-2g-eIH" secondAttribute="trailing" constant="20" id="rFd-aF-03J"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Settings" id="PEC-EE-AZr"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="playersCountTextField" destination="U1m-Sy-82v" id="qBJ-Xw-hcU"/>
+                        <outlet property="playersTableView" destination="HfR-2g-eIH" id="KZ1-nU-5Mg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3C-o7-8W5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -453,6 +491,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8cu-mh-AQ9"/>
+        <segue reference="cCb-dp-oRf"/>
     </inferredMetricsTieBreakers>
 </document>
