@@ -8,6 +8,6 @@
 
 protocol SettingsViewPresenter  {
     init(_ view: SettingsView)
-    func changePlayer(at index: Int, _ newName: String?, _ newLife: Int?)
+    func changePlayer(at index: Int, _ newName: String?, _ newLife: Int? )
     func changePlayersNumber(_ newValue: Int)
 }

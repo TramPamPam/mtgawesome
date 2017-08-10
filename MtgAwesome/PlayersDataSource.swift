@@ -14,7 +14,7 @@ class PlayersDataSource: NSObject, UITableViewDataSource {
         if (PlayersService.shared.players.count < playersCount) {
             _ = PlayersService.createPlayers(playersCount)
         } else {
-            _ = PlayersService.changePlayersCount(playersCount)
+            _ = PlayersService.changePlayersNumber(playersCount)
         }
         
     }

@@ -21,7 +21,7 @@ class PlayersService {
         return PlayersService.shared.players
     }
     
-    class func changePlayersCount(_ count: Int = 0) -> [Player] {
+    class func changePlayersNumber(_ count: Int = 0) -> [Player] {
         var players = PlayersService.shared.players
         if (count < players.count) {
             players = Array(players.prefix(count))

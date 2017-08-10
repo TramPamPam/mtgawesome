@@ -7,7 +7,7 @@
 //
 
 class SettingsPresenter: SettingsViewPresenter {
-    unowned let view: SettingsView
+    private(set) weak var view: SettingsView?
     
     var dataSource: PlayersDataSource! = PlayersDataSource()
     
@@ -28,7 +28,7 @@ class SettingsPresenter: SettingsViewPresenter {
     
     func changePlayersNumber(_ newValue: Int) {
         //Update current view:
-        _ = PlayersService.changePlayersCount(newValue)
-        view.setPlayers(from: dataSource)
+        _ = PlayersService.changePlayersNumber(newValue)
+        view?.setPlayers(from: dataSource)
     }
 }
