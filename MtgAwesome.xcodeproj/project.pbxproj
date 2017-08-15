@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		944274EE1F3DA9D700BEB223 /* LifeCounterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944274ED1F3DA9D700BEB223 /* LifeCounterVC.swift */; };
+		9466D5C21F42E580002BE8F1 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9466D5C11F42E580002BE8F1 /* TabBarView.swift */; };
+		9466D5C41F42E615002BE8F1 /* TabBarViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9466D5C31F42E615002BE8F1 /* TabBarViewPresenter.swift */; };
+		9466D5C61F42E675002BE8F1 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9466D5C51F42E675002BE8F1 /* TabBarPresenter.swift */; };
 		948FFA501F3C573D00546FF0 /* SettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948FFA4F1F3C573D00546FF0 /* SettingsPresenterTests.swift */; };
 		94D543081F0CD93A007F9108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D543071F0CD93A007F9108 /* AppDelegate.swift */; };
 		94D5430D1F0CD93A007F9108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D5430B1F0CD93A007F9108 /* Main.storyboard */; };
 		94D5430F1F0CD93A007F9108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D5430E1F0CD93A007F9108 /* Assets.xcassets */; };
 		94D543121F0CD93A007F9108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D543101F0CD93A007F9108 /* LaunchScreen.storyboard */; };
 		94D5431D1F0CD93A007F9108 /* MtgAwesomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D5431C1F0CD93A007F9108 /* MtgAwesomeTests.swift */; };
+		94E341FF1F41C0CD0066F9AC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E341FE1F41C0CD0066F9AC /* TabBarController.swift */; };
 		94E691071F39E5D800C4D735 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E691061F39E5D800C4D735 /* SettingsVC.swift */; };
 		94E691091F39FB0800C4D735 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E691081F39FB0700C4D735 /* PlayerCell.swift */; };
 		A56F68541F3B3D1700DE28B1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F68531F3B3D1700DE28B1 /* SettingsView.swift */; };
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		944274ED1F3DA9D700BEB223 /* LifeCounterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeCounterVC.swift; sourceTree = "<group>"; };
+		9466D5C11F42E580002BE8F1 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		9466D5C31F42E615002BE8F1 /* TabBarViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewPresenter.swift; sourceTree = "<group>"; };
+		9466D5C51F42E675002BE8F1 /* TabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 		948FFA4F1F3C573D00546FF0 /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
 		94D543041F0CD93A007F9108 /* MtgAwesome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtgAwesome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D543071F0CD93A007F9108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +53,7 @@
 		94D543181F0CD93A007F9108 /* MtgAwesomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MtgAwesomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D5431C1F0CD93A007F9108 /* MtgAwesomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MtgAwesomeTests.swift; sourceTree = "<group>"; };
 		94D5431E1F0CD93A007F9108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E341FE1F41C0CD0066F9AC /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		94E691061F39E5D800C4D735 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		94E691081F39FB0700C4D735 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		A56F68531F3B3D1700DE28B1 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -72,6 +82,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		944274EF1F3DAA4A00BEB223 /* Supporiting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94D5430E1F0CD93A007F9108 /* Assets.xcassets */,
+				94D543101F0CD93A007F9108 /* LaunchScreen.storyboard */,
+				94D543131F0CD93A007F9108 /* Info.plist */,
+			);
+			name = "Supporiting Files";
+			sourceTree = "<group>";
+		};
+		9466D5C01F42E537002BE8F1 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				9466D5C71F42E69A002BE8F1 /* View */,
+				9466D5C81F42E6A1002BE8F1 /* Presenter */,
+			);
+			name = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		9466D5C71F42E69A002BE8F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94E341FE1F41C0CD0066F9AC /* TabBarController.swift */,
+				9466D5C11F42E580002BE8F1 /* TabBarView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9466D5C81F42E6A1002BE8F1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9466D5C31F42E615002BE8F1 /* TabBarViewPresenter.swift */,
+				9466D5C51F42E675002BE8F1 /* TabBarPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
 		94D542FB1F0CD93A007F9108 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +142,11 @@
 			children = (
 				94D543071F0CD93A007F9108 /* AppDelegate.swift */,
 				94D5430B1F0CD93A007F9108 /* Main.storyboard */,
-				94D5430E1F0CD93A007F9108 /* Assets.xcassets */,
-				94D543101F0CD93A007F9108 /* LaunchScreen.storyboard */,
-				94D543131F0CD93A007F9108 /* Info.plist */,
+				944274ED1F3DA9D700BEB223 /* LifeCounterVC.swift */,
+				9466D5C01F42E537002BE8F1 /* Tab Bar */,
 				A56F68511F3B3B9E00DE28B1 /* Settings */,
 				94E691081F39FB0700C4D735 /* PlayerCell.swift */,
+				944274EF1F3DAA4A00BEB223 /* Supporiting Files */,
 			);
 			path = MtgAwesome;
 			sourceTree = "<group>";
@@ -256,15 +303,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9466D5C41F42E615002BE8F1 /* TabBarViewPresenter.swift in Sources */,
 				A56F685E1F3B448400DE28B1 /* PlayersService.swift in Sources */,
 				94E691091F39FB0800C4D735 /* PlayerCell.swift in Sources */,
+				94E341FF1F41C0CD0066F9AC /* TabBarController.swift in Sources */,
 				A56F68541F3B3D1700DE28B1 /* SettingsView.swift in Sources */,
 				94D543081F0CD93A007F9108 /* AppDelegate.swift in Sources */,
 				A56F68601F3B452100DE28B1 /* PlayersDataSource.swift in Sources */,
 				A56F68591F3B3E4D00DE28B1 /* SettingsViewPresenter.swift in Sources */,
+				9466D5C61F42E675002BE8F1 /* TabBarPresenter.swift in Sources */,
 				A56F685B1F3B443D00DE28B1 /* Player.swift in Sources */,
 				94E691071F39E5D800C4D735 /* SettingsVC.swift in Sources */,
 				A56F68561F3B3DCD00DE28B1 /* SettingsPresenter.swift in Sources */,
+				9466D5C21F42E580002BE8F1 /* TabBarView.swift in Sources */,
+				944274EE1F3DA9D700BEB223 /* LifeCounterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

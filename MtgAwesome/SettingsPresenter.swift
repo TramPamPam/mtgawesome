@@ -16,19 +16,4 @@ class SettingsPresenter: SettingsViewPresenter {
         view.setPlayers(from: dataSource)
     }
     
-    func changePlayer(at index: Int, _ newName: String? = nil, _ newLife: Int? = nil) {
-        guard PlayersService.shared.players.count > index else { return }
-        if let name = newName {
-            PlayersService.shared.players[index].name = name
-        }
-        if let life = newLife {
-            PlayersService.shared.players[index].life = life
-        }
-    }
-    
-    func changePlayersNumber(_ newValue: Int) {
-        //Update current view:
-        _ = PlayersService.changePlayersNumber(newValue)
-        view?.setPlayers(from: dataSource)
-    }
 }

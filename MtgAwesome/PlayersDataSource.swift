@@ -10,17 +10,12 @@ import UIKit
 
 class PlayersDataSource: NSObject, UITableViewDataSource {
     
-    required init(_ playersCount: Int = 4) {
-        if (PlayersService.shared.players.count < playersCount) {
-            _ = PlayersService.createPlayers(playersCount)
-        } else {
-            _ = PlayersService.changePlayersNumber(playersCount)
-        }
-        
+    var playersCount: Int {
+        return PlayersService.shared.players.count
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return PlayersService.shared.players.count
+        return playersCount
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

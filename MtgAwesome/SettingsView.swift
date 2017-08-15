@@ -15,7 +15,7 @@ protocol SettingsView: class {
 extension SettingsVC {
     
     func setPlayers(from source: PlayersDataSource) {
-        playersCountTextField.text = "\(PlayersService.shared.players.count)"
+        playersCountTextField.text = "\(source.playersCount)"
         playersTableView.dataSource = source
         playersTableView.reloadData()
     }
