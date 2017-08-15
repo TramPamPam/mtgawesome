@@ -34,6 +34,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <state key="normal" title="40"/>
+                                <connections>
+                                    <action selector="lifeChangeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVh-zM-chf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRW-CR-VWD">
                                 <rect key="frame" x="30" y="243" width="70" height="30"/>
@@ -42,6 +45,9 @@
                                     <constraint firstAttribute="width" constant="70" id="OF6-LV-hes"/>
                                 </constraints>
                                 <state key="normal" title="+1"/>
+                                <connections>
+                                    <action selector="lifeChangeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uYt-Vl-p6G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJT-xZ-Hdl">
                                 <rect key="frame" x="30" y="288" width="70" height="30"/>
@@ -50,6 +56,9 @@
                                     <constraint firstAttribute="height" constant="30" id="zww-CH-YFX"/>
                                 </constraints>
                                 <state key="normal" title="+5"/>
+                                <connections>
+                                    <action selector="lifeChangeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="74M-8y-H46"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZO-YI-bev">
                                 <rect key="frame" x="110" y="243" width="70" height="30"/>
@@ -58,6 +67,9 @@
                                     <constraint firstAttribute="height" constant="30" id="gQ6-RW-Szn"/>
                                 </constraints>
                                 <state key="normal" title="-1"/>
+                                <connections>
+                                    <action selector="lifeChangeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fP-5G-UIJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Te-1H-Q4J">
                                 <rect key="frame" x="110" y="288" width="70" height="30"/>
@@ -66,6 +78,9 @@
                                     <constraint firstAttribute="height" constant="30" id="zeG-st-SPu"/>
                                 </constraints>
                                 <state key="normal" title="-5"/>
+                                <connections>
+                                    <action selector="lifeChangeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cN1-u3-oK8"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Sd-ca-fql">
                                 <rect key="frame" x="188" y="77" width="210" height="659"/>
@@ -117,9 +132,6 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KSS-wk-4KV">
                                 <rect key="frame" x="217" y="35" width="51" height="31"/>
-                                <connections>
-                                    <segue destination="Ath-hB-TGL" kind="show" id="oGq-N0-Xeh"/>
-                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -151,6 +163,15 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" id="UpU-s3-Pgd"/>
+                    <connections>
+                        <outlet property="commanderSwitch" destination="KSS-wk-4KV" id="C9e-Nn-MN3"/>
+                        <outlet property="logTableView" destination="0Sd-ca-fql" id="tHR-K2-SKm"/>
+                        <outlet property="minusFiveButton" destination="9Te-1H-Q4J" id="qRJ-Gh-dNC"/>
+                        <outlet property="minusOneButton" destination="BZO-YI-bev" id="Bof-Yo-syg"/>
+                        <outlet property="plusFiveButton" destination="pJT-xZ-Hdl" id="Tfp-tQ-eGn"/>
+                        <outlet property="plusOneButton" destination="JRW-CR-VWD" id="Hw8-gB-3St"/>
+                        <outlet property="totalButton" destination="UrJ-WL-kzN" id="hy4-Tv-D3K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
