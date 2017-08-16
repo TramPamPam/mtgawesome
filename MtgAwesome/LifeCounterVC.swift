@@ -10,6 +10,7 @@ import UIKit
 
 protocol LifeCounterView: class {
     func showLife(_ life: Int)
+    func updateLog(with source: LogDataSource)
 }
 
 protocol LifeCounterViewPresenter: class {
@@ -22,8 +23,9 @@ class LifeCounterPresenter: LifeCounterViewPresenter {
     private(set) weak var view: LifeCounterView!
 
     private var life = 40
-    private var differences:[Int] = []
-    private var summaries:[Int] = []
+    fileprivate var entries: [LogEntry] = []
+    
+    var dataSource: LogDataSource! = LogDataSource()
     
     required init(_ view: LifeCounterView) {
         self.view = view
@@ -39,29 +41,36 @@ class LifeCounterPresenter: LifeCounterViewPresenter {
         }
         
         life += difference
-        differences.append(difference)
-        summaries.append(life)
+        
+        let newEntry = LogEntry(difference: difference, summary: life)
+        
+        entries.append(newEntry)
+        dataSource.entries = entries
+
+        view.updateLog(with: dataSource)
+
         return life
     }
 }
 
 class LogDataSource: NSObject, UITableViewDataSource {
     
-    private var differences:[Int] = []
-    private var summaries:[Int] = []
-    
-    convenience init(with differences: [Int], summaries: [Int] ) {
+    var entries: [LogEntry] = []
+
+    convenience init(_ entries: [LogEntry]) {
         self.init()
-        self.differences = differences
-        self.summaries = summaries
+        self.entries = entries
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return differences.count
+        return entries.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "LogCell", for: indexPath) as? LogCell{
+            cell.logEntry = entries[indexPath.row]
+            return cell
+        }
         return UITableViewCell()
     }
 }
@@ -90,6 +99,11 @@ class LifeCounterVC: UIViewController, LifeCounterView {
     
     func showLife(_ life: Int) {
         totalButton.setTitle("\(life)", for: .normal)
+    }
+    
+    func updateLog(with source: LogDataSource) {
+        logTableView.dataSource = source
+        logTableView.reloadData()
     }
     
     @IBAction func lifeChangeAction(_ sender: UIButton) {

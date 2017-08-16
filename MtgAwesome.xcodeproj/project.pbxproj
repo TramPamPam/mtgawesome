@@ -11,6 +11,7 @@
 		9466D5C21F42E580002BE8F1 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9466D5C11F42E580002BE8F1 /* TabBarView.swift */; };
 		9466D5C41F42E615002BE8F1 /* TabBarViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9466D5C31F42E615002BE8F1 /* TabBarViewPresenter.swift */; };
 		9466D5C61F42E675002BE8F1 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9466D5C51F42E675002BE8F1 /* TabBarPresenter.swift */; };
+		94840D9E1F44211F00F51DC7 /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94840D9D1F44211F00F51DC7 /* LogCell.swift */; };
 		948FFA501F3C573D00546FF0 /* SettingsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948FFA4F1F3C573D00546FF0 /* SettingsPresenterTests.swift */; };
 		94D543081F0CD93A007F9108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D543071F0CD93A007F9108 /* AppDelegate.swift */; };
 		94D5430D1F0CD93A007F9108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D5430B1F0CD93A007F9108 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		9466D5C11F42E580002BE8F1 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		9466D5C31F42E615002BE8F1 /* TabBarViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewPresenter.swift; sourceTree = "<group>"; };
 		9466D5C51F42E675002BE8F1 /* TabBarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		94840D9D1F44211F00F51DC7 /* LogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
 		948FFA4F1F3C573D00546FF0 /* SettingsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenterTests.swift; sourceTree = "<group>"; };
 		94D543041F0CD93A007F9108 /* MtgAwesome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtgAwesome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D543071F0CD93A007F9108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				9466D5C01F42E537002BE8F1 /* Tab Bar */,
 				A56F68511F3B3B9E00DE28B1 /* Settings */,
 				94E691081F39FB0700C4D735 /* PlayerCell.swift */,
+				94840D9D1F44211F00F51DC7 /* LogCell.swift */,
 				944274EF1F3DAA4A00BEB223 /* Supporiting Files */,
 			);
 			path = MtgAwesome;
@@ -308,6 +311,7 @@
 				94E691091F39FB0800C4D735 /* PlayerCell.swift in Sources */,
 				94E341FF1F41C0CD0066F9AC /* TabBarController.swift in Sources */,
 				A56F68541F3B3D1700DE28B1 /* SettingsView.swift in Sources */,
+				94840D9E1F44211F00F51DC7 /* LogCell.swift in Sources */,
 				94D543081F0CD93A007F9108 /* AppDelegate.swift in Sources */,
 				A56F68601F3B452100DE28B1 /* PlayersDataSource.swift in Sources */,
 				A56F68591F3B3E4D00DE28B1 /* SettingsViewPresenter.swift in Sources */,

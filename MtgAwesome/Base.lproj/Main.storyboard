@@ -92,7 +92,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" id="CdT-YU-pD4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="LogCell" id="CdT-YU-pD4" customClass="LogCell" customModule="MtgAwesome" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="210" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CdT-YU-pD4" id="Chm-b9-cvy">
@@ -121,6 +121,10 @@
                                                 <constraint firstAttribute="bottom" secondItem="jvN-8O-2Vg" secondAttribute="bottom" constant="8" id="lZs-b0-Rp3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="differenceLabel" destination="Wnz-Es-EcL" id="KeM-CH-msp"/>
+                                            <outlet property="summaryLabel" destination="jvN-8O-2Vg" id="uoy-OJ-AJn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
